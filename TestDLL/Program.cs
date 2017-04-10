@@ -12,11 +12,7 @@ namespace TestDLL
     {
         [DllImport("ICUBIWrapperCPP.dll", CallingConvention = CallingConvention.Cdecl)]
         public static extern int GetWordBoundary(IntPtr unicodeBytes, IntPtr result);
-        [DllImport("ICUBIWrapperCPP.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int Sum(int a,int b);
 
-        [DllImport("ICUBIWrapperCPP.dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void Foo(IntPtr test);
         static void Main(string[] args)
         {
             //Console.WriteLine(GetWordBoundary("คนไทย"));

@@ -27,16 +27,6 @@ extern "C" {
 		UnicodeString us = UnicodeString::fromUTF8(input);
 		return listWordBoundaries(us, result);
 	}
-
-	__declspec(dllexport) int Sum(int a, int b) {
-		return a + b;
-	}
-	
-	__declspec(dllexport) void Foo(int *test) {
-		for (int i = 0; i < 10; i++) {
-			test[i] = i + 1;
-		}
-	}
 }
 
 BOOL APIENTRY DllMain( HMODULE hModule,

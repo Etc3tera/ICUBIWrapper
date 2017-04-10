@@ -28,9 +28,9 @@ namespace APITest.Controllers
 
             // Because C++ Native use NUL as end of string, so we add 4 zero bytes to ensure Native Library know that our string end
             
+            Marshal.WriteByte(input, input_bytes.Length, 0);
             Marshal.WriteByte(input, input_bytes.Length + 1, 0);
             Marshal.WriteByte(input, input_bytes.Length + 2, 0);
-            Marshal.WriteByte(input, input_bytes.Length + 3, 0);
             Marshal.WriteByte(input, input_bytes.Length + 3, 0);
 
             int len = GetWordBoundary(input, test);
