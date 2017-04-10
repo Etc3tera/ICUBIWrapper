@@ -1,0 +1,9 @@
+packages/
+APITest/bin/
+ICUBIWrapperCPP/x64/Debug/
+Debug/
+ipch/
+*.user
+*.filters
+ICU4NETTest.VC.db
+*.suo
